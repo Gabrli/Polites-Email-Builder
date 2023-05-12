@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet"  href="index.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" type="text/css" />
+        
+        <script src="scripts/index.js" defer></script>
+        <script src="scripts/clipBoard.js" defer=""></script>
+    
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Polite emial bulder</title>
+    </head>
+    <body>
+        
+        <header class="main-header">
+            <h2>Polite email builder</h2>
+        </header>
+
+        <div class="main-container">
+            <div class="builder-box">
+                <label for="adress">To:</label>
+                <section id="adress" class="information-section">
+                    <input  id="emailText" class="nameBox"  type="text" placeholder="example@mail.com" value=""/>
+                </section>
+                <label for="subject">Subject:</label>
+                <section id="subject" class="information-section">
+                    <input onchange="textUpdate()" id="subjectText" class="nameBox" placeholder="Example message subject" type="text"/>
+                </section>
+                <label for="content">Body:</label>
+                <section id="content" class="information-section">
+                    <div id="greeting" class="options-wrapper">
+                        <button  class="btn-grettings">Dear Madam,</button>
+                        <button  class="btn-grettings">Dear Mr,</button>
+                        <button  class="btn-grettings">Dear Mrs,</button>
+                        <button  class="btn-grettings">Dear Ms,</button>
+                        <button class="btn-grettings">Dear Sir,</button>
+                        <button  class="btn-grettings">Good morning,</button>
+                        <button  class="btn-grettings">Greetings</button>
+                        <button  class="btn-grettings">To whom it may concern,</button>
+                    </div>
+                    <div id="followUp" class="options-wrapper">
+                        <button class="btn-followUp">I regret to inform you that</button>
+                        <button class="btn-followUp">I am writing with regard to</button>
+                        <button class="btn-followUp">I am writing to thank you for </button>
+                        <button class="btn-followUp">I am writing to let you know</button>
+                        <button class="btn-followUp">I am writing in response to</button>
+                        <button class="btn-followUp">I an writing in reply to</button>
+                        <button class="btn-followUp">I am writing in reference to</button>
+                        <button class="btn-followUp">I am writing in connection with</button>
+                        <button class="btn-followUp">I am delighted to tell you</button>
+                    </div>
+                    <textarea id="emailBodyContntent" class="emailBody" aria-valuetext="" placeholder="Your message"></textarea>
+                    <div id="farwell" class="options-wrapper">
+                        <button class="btn-farwell">For further information, please do not hesitate to contact me</button>
+                        <button class="btn-farwell">I hope to greet you agin soon</button>
+                        <button class="btn-farwell">I hope to have this issue resolved</button>
+                        <button class="btn-farwell">I look forward to hearnig from you soon</button>
+                        <button class="btn-farwell">I would be happy to meet with you to speak about the incident further if you have any outstanding concerns</button>
+                        <button class="btn-farwell">I am looking forward tou your reply</button>
+                        <button class="btn-farwell">Please accept our apologies for the inconvenience you had</button>
+                        <button class="btn-farwell">Please do not hesitate to share any thoughts or concerns with me an I would be glad to discuss this further</button>
+                        <button class="btn-farwell">Please do not hesitate to contact me if I can provide any additional information</button>
+                        <button class="btn-farwell">Please let me know if there is anything can help you with</button>
+                        <button class="btn-farwell">Please let me know if you have any questions</button>
+                        <button class="btn-farwell">Thank you for help and feedback. Let us keep in touch!</button>
+                        <button class="btn-farwell">Thank you in advance </button>
+                        <button class="btn-farwell">Thanks for your attention</button>
+                        <button class="btn-farwell">We are very grateful to have you as a member of our team an we wish to continue to see you thrive within our organization</button>
+                        <button class="btn-farwell">We want to thank you in advance for your time and hope that you enjoyed your experiance.</button>
+                     
+                    </div>
+                    <div id="conclusions" class="options-wrapper">
+                        <button class="btn-conclusion">Best regards</button>
+                        <button class="btn-conclusion">Kind regards</button>
+                        <button class="btn-conclusion">Reagrds</button>
+                        <button class="btn-conclusion">Respectfully,</button>
+                        <button class="btn-conclusion">Sincerely,</button>
+                        <button class="btn-conclusion">With regards,</button>
+                        <button class="btn-conclusion">Yours faithfully</button>
+                        <button class="btn-conclusion">Yours sincerely</button>
+                        <button class="btn-conclusion">Yours truly,</button>
+                    </div>
+                </section>
+                <section class="information-section">
+                    <input type="text" class="nameBox" placeholder="Your signature/name"/>
+                </section>
+
+            </div>
+        </div>
+
+        <section class="options-section">
+            <div class="options-buttons-container">
+                <button>Reset All</button>
+                <button>Send</button>
+                <button type="button" class="copy-btn">Copy to clipboard</button>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-btns-section">
+                <a href="https://gabrieldeveloper.gabrys564.repl.co/"><button><i class="fa-brands fa-uncharted"></i> My website</button></a>
+                <a href="https://github.com/Gabrli"><button><i class="fa-brands fa-github"></i> GitHub</button></a>
+                <a><button><i class="fa-solid fa-bug"></i> Repo</button></a>
+            </div>
+        </footer>
+
+   
+    </body>
+</html>
